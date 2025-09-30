@@ -4,7 +4,7 @@ import Fuel.Fuel;
 
 import java.util.List;
 
-class GasPump extends Pump {
+public class GasPump extends Pump {
     public GasPump(String id, List<Fuel> fuels) {
         super(id, fuels);
     }

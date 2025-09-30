@@ -2,7 +2,7 @@ package Pump;
 import Fuel.Fuel;
 import java.util.List;
 
-class DieselPump extends Pump {
+public class DieselPump extends Pump {
     public DieselPump(String id, List<Fuel> fuels) {
         super(id, fuels);
         // Проверка: здесь должен быть только Diesel

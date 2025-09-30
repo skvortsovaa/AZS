@@ -3,7 +3,7 @@ package Users;
 import Fuel.Fuel;
 import GasStation.GasStation;
 
-final class Manager extends User {
+public final class Manager extends User {
     private final GasStation station;
 
     public Manager(String name, GasStation station) {

@@ -30,6 +30,14 @@ public class Fuel {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Fuel)) return false;
+        Fuel fuel = (Fuel) o;
+        return name.equalsIgnoreCase(fuel.name);
+    }
+
+    @Override
     public int hashCode() {
         return name.toLowerCase().hashCode();
     }

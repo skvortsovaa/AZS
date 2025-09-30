@@ -16,9 +16,11 @@ public Pump(String id, List<Fuel> fuels) {
 
     protected Fuel findFuel(String type) {
         for (Fuel f : fuels) {
-            if (f.getName().equalsIgnoreCase(type)) return f;
+            if (f.getName().equalsIgnoreCase(type)) {
+                return f;
+            }
         }
-        return null;
+        throw new IllegalArgumentException("Несовместимый тип топлива: " + type);
     }
 
     // Заправка по литрам
@@ -42,6 +44,8 @@ public Pump(String id, List<Fuel> fuels) {
     public double refuel(Car car) {
         return refuel(car, car.getFreeSpace());
     }
+
+
 
     @Override
     public String toString() {

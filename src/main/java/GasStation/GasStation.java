@@ -3,12 +3,14 @@ package GasStation;
 import Car.Car;
 import Fuel.Fuel;
 import Pump.Pump;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class GasStation {
-    private List<Pump> pumps;
-    private double revenue; // выручка
-    private double expenses; // расходы на поставки
+    private List<Pump> pumps = new ArrayList<>();
+    private double revenue = 0; // выручка
+    private double expenses = 0; // расходы на поставки
 // addPump, serveCustomer, getRevenue, orderFuelDelivery, fuelStats ...
     public void addPump(Pump pump) {
         pumps.add(pump);

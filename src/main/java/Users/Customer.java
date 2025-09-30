@@ -5,7 +5,7 @@ import GasStation.GasStation;
 import Pump.Pump;
 import Pump.ElectricPump;
 
-final class Customer extends User {
+public final class Customer extends User {
     private final Car car;
 
     public Customer(String name, Car car) {
